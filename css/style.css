@@ -1,0 +1,465 @@
+@import url(./reset.css);
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*SECTION INTRO*/
+
+.intro {
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(52, 73, 94, 0.5),rgba(52, 73, 94, 0));
+    transition: background .5s;
+}
+
+header {
+    width: 1280px;
+    margin-top: 39px;
+    transition: position .3s;
+}
+
+.scroll-header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    background: #1C3C50;
+}
+
+.logo {
+    margin: 8px 0 7px 155px;
+}
+
+.intro h1 {
+    float: left;
+    text-indent: -9999px;
+}
+
+.main-nav {
+    float: right;
+    margin-right: 90px;
+    font: 22px/31px 'Droid Sans', sans-serif;
+    text-align: center;
+}
+
+
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 37px;
+}
+
+.main-nav li a {
+    line-height: 70px;
+}
+
+.intro .big-text {
+    display: block;
+    text-align: center;
+    font: bold 80px 'Droid Sans', sans-serif;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+.intro span:nth-of-type(1) {
+    margin-top: 175px;
+}
+
+.intro .explore {
+    position: relative;
+    z-index: 2;
+    bottom: 25px;
+    margin: 124px auto;
+    display: block;
+    width: 60px;
+    height: 60px;
+    transform:rotate(-90deg);
+    text-align: center;
+    line-height: 60px;
+    border-radius: 30px;
+    background: #2ecc71;
+    font-size: 40px;
+}
+
+.intro .explore::after {
+    content: "Explore";
+    display: block;
+    transform:rotate(90deg);
+    position: relative;
+    top: -60px;
+    right: 65px;
+    font: 27px/31px 'Droid Serif', serif;
+}
+
+.explore-button-line {
+    border-top: 1px solid #fff;
+    position: relative;
+    bottom: 178px;
+    opacity: 0.5;
+}
+
+/* ABOUT */
+
+section.about {
+    overflow: hidden;
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+.section-header {
+    text-align: center;
+    font: bold 45px 'Droid Sans', sans-serif;
+    color: #ffffff;
+    margin-top: 120px;
+    margin-bottom: 55px;
+}
+
+.about p {
+    width: 677px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.about .benefits {
+    margin-top: 137px;
+    margin-bottom: 105px;
+    text-align: center;
+}
+
+.benefits li {
+    display: inline-block;
+    text-align: center;
+}
+
+.benefits-header {
+    display: block;
+    font: 26px 'Droid Sans', sans-serif;
+    font-weight: 700;
+    line-height: 33px;
+    margin: 30px 0;
+}
+
+.benefits i {
+    width: 144px;
+    height: 144px;
+    border-radius: 90px;
+    border: 4px solid #ffffff;
+    line-height: 144px;
+    margin: 0 90px;
+}
+
+.benefits p {
+    width: 212px;
+    font: 20px/30px 'Droid Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*PORTFOLIO*/
+.portfolio {
+    overflow: hidden;
+}
+
+
+.portfolio h2.section-header, .filter li a, .portfolio p {
+    color: #1C3C50;
+}
+
+.portfolio .filter {
+    margin: 0 auto;
+    width: 556px;
+}
+
+.portfolio .filter li {
+    display: inline-block;
+    font: 30px/31px 'Droid Sans', sans-serif;
+    font-weight: 400;
+}
+
+.filter li {
+    padding: 8px 20px;
+    margin: 0 6px;
+}
+
+li.filter-active {
+    background-color: #2ecc71;
+    border-radius: 20px;
+}
+
+li.filter-active a {
+    color: #ffffff;
+}
+
+.filter-images {
+    margin: 105px auto 80px auto;
+    width: 1183px;
+}
+
+.filter-images li {
+    display: inline-block;
+    margin-right: 29px;
+    margin-bottom: 29px;
+    padding: 11px;
+    width: 348px;
+    height: 260px;
+    border: 1px solid #E9E9E9;
+}
+
+.filter-images li:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+figure {
+    margin: auto;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -2
+}
+
+.hover-img {
+    width: 348px;
+    height: 159px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(52, 73, 94, 0.9);
+    text-align: center;
+    padding-top: 103px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hover-img:hover{
+    position: absolute;
+    opacity: 1;
+}
+
+.project-title {
+    font: 35px/31px 'Droid Sans', sans-serif;
+    color: #fff;
+    font-weight: 700px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 0 10px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    font: 12px/26px 'Droid Serif', serif;
+    
+}
+
+.br:after {
+    content: "";
+    display: block;
+}
+
+/*TEAM*/
+
+.team {
+    background-color: #2980b9;
+    overflow: hidden;
+}
+
+.team .team-members {
+    margin-bottom: 105px;
+    text-align: center;
+}
+
+.team-members li {
+    display: inline-block;
+    text-align: center;
+}
+
+.team-header {
+    display: block;
+    font: 26px 'Droid Sans', sans-serif;
+    font-weight: 700;
+    line-height: 33px;
+    margin: 30px 0;
+}
+
+.team .photo {
+    overflow: hidden;
+    width: 219px;
+    height: 219px;
+    border-radius: 115px;
+    border: 4px solid #ffffff;
+    line-height: 144px;
+    margin: 0 90px;
+}
+
+.team p {
+    display: inline-block;
+    width: 212px;
+    font: 20px/30px 'Droid Sans', sans-serif;
+    font-weight: 400;
+}
+
+.team-header, .team p {
+    color: #ffffff;
+}
+
+.team-members i {
+    width: 59px;
+    height: 59px;
+    margin: 0 15px;
+    border-radius: 45px;
+    border: 2px solid #ffffff;
+    line-height: 59px;
+    color: #ffffff;
+}
+
+.member-contacts {
+    margin-top: 47px;
+}
+
+/*CONTACT*/
+.contact {
+    overflow: hidden;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.contact .section-header {
+    color: #2c3e50;
+}
+
+.contact p {
+    margin: 0 auto;
+    font: 26px/33px 'Droid Sans', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.contact-wrapper {
+    overflow: hidden;
+    width: 700px;
+    margin: 75px auto;
+}
+
+.message-form {
+    float: left;
+}
+
+/*PLACEHOLDER-COLOR*/
+.message-form input::-webkit-input-placeholder {color:#1C3C50;}
+.message-form input::-moz-placeholder          {color:#1C3C50;}/* Firefox 19+ */
+.message-form input:-moz-placeholder           {color:#1C3C50;}/* Firefox 18- */
+.message-form input:-ms-input-placeholder      {color:#1C3C50;}
+.message-form textarea::-webkit-input-placeholder {color:#1C3C50;}
+.message-form textarea::-moz-placeholder          {color:#1C3C50;}/* Firefox 19+ */
+.message-form textarea:-moz-placeholder           {color:#1C3C50;}
+.message-form textarea:-ms-input-placeholder      {color:#1C3C50;}
+
+
+
+.message-form input:focus::-webkit-input-placeholder {color:transparent;}
+.message-form input:focus::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+.message-form input:focus:-moz-placeholder           {color:transparent;}/* Firefox 18- */
+.message-form input:focus:-ms-input-placeholder      {color:transparent;}
+.message-form textarea:focus::-webkit-input-placeholder {color:transparent;}
+.message-form textarea:focus::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+.message-form textarea:focus:-moz-placeholder           {color:transparent;}
+.message-form textarea:focus:-ms-input-placeholder      {color:transparent;}
+
+/*END PLACEHOLDER-COLOR*/
+
+.message-form input:nth-child(-n+2), .message-form textarea {
+    display: block;
+    margin-bottom: 42px;
+    width: 370px;
+    padding: 8px 0;
+    border: none;
+    color: #2c3e50;
+    outline: none;
+    border-bottom: 3px solid #2ecc71;
+    font: 26px/33px 'Droid Serif', serif;
+    font-weight: 400;
+}
+
+.submit-button {
+    width: 130px;
+    height: 47px;
+    border: none;
+    background-color: #2ecc71;
+    font: 21px/33px 'Droid Serif', serif;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.contact-details {
+    float: right;
+    width: 200px;
+}
+
+
+.contact-details dt {
+    font: 16px/33px 'Droid Sans', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.contact-details dd {
+    font: 20px/33px 'Droid Sans', sans-serif;
+    font-weight: 400;
+    color: #2c3e50;
+    margin-bottom: 27px;
+}
+
+/*FOOTER*/
+
+footer {
+    padding: 68px 155px;
+    background-color: #1C3C50;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-contact-details li {
+    display: inline-block;
+    font: 16px/26px 'Droid Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-contact-details>li:nth-child(-n+2) {
+    width: 160px;
+}
+
+.footer-contact-details>li:first-child {
+    margin-right: 125px;
+}
+
+footer .social-buttons {
+    margin-left: 128px;
+}
+
+footer .social-buttons i {
+    width: 53px;
+    height: 53px;
+    margin: 0 20px 0 0;
+    border-radius: 45px;
+    border: 2px solid #ffffff;
+    line-height: 53px;
+    text-align: center;
+    color: #ffffff;
+}
